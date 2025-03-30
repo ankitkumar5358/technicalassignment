@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page Assignment</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1>Sunshine Bliss</h1>
+        </header>
+        
+        <main class="product-card">
+            <div class="product-header">
+                <div class="title-line">
+                    <div class="line"></div>
+                    <h2>YAY! It's BOGO</h2>
+                    <div class="line"></div>
+                </div>
+               
+            </div>
+            
+            <div class="product-options">
+                <!-- Option 1 -->
+                <div class="option-card" data-units="1" data-price="10.00">
+                    <div class="option-header">
+                        <label class="radio-container">
+                            <input type="radio" name="unit-option" value="1" checked>
+                            <span class="checkmark"></span>
+                            <div>
+                                <span class="unit-count">1 Unit</span>
+                                <span class="discount-tag">10% OFF</span>
+                            </div>
+                        </label>
+                        <div class="price-container">
+                            <div class="current-price">$10.00 USD</div>
+                            <div class="original-price">$14.00 USD</div>
+                        </div>
+                    </div>
+                    <div class="option-label">Standard Price</div>
+                </div>
+                
+                <!-- Option 2 -->
+                <div class="option-card selected" data-units="2" data-price="18.00">
+                    <div class="most-popular-tag">MOST POPULAR</div>
+                    <div class="option-header">
+                        <label class="radio-container">
+                            <input type="radio" name="unit-option" value="2">
+                            <span class="checkmark"></span>
+                            <div>
+                                <span class="unit-count">2 Unit</span>
+                                <span class="discount-tag">20% OFF</span>
+                            </div>
+                        </label>
+                        <div class="price-container">
+                            <div class="current-price">$18.00 USD</div>
+                            <div class="original-price">$24.00 USD</div>
+                        </div>
+                    </div>
+                    
+                    <div class="variant-options">
+                        <div class="variant-row">
+                            <div class="variant-label">#1</div>
+                            <div class="dropdown-container">
+                                <select class="dropdown" name="size-1">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
+                            </div>
+                            <div class="dropdown-container">
+                                <select class="dropdown" name="color-1">
+                                    <option value="Black">Black</option>
+                                    <option value="White">White</option>
+                                    <option value="Blue">Blue</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="variant-row">
+                            <div class="variant-label">#2</div>
+                            <div class="dropdown-container">
+                                <select class="dropdown" name="size-2">
+                                    <option value="S">S</option>
+                                    <option value="M">M</option>
+                                    <option value="L">L</option>
+                                </select>
+                            </div>
+                            <div class="dropdown-container">
+                                <select class="dropdown" name="color-2">
+                                    <option value="Colour">Colour</option>
+                                    <option value="Black">Black</option>
+                                    <option value="White">White</option>
+                                    <option value="Blue">Blue</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Option 3 -->
+                <div class="option-card" data-units="3" data-price="24.00">
+                    <div class="option-header">
+                        <label class="radio-container">
+                            <input type="radio" name="unit-option" value="3">
+                            <span class="checkmark"></span>
+                            <div>
+                                <span class="unit-count">3 Unit</span>
+                                <span class="discount-tag">30% OFF</span>
+                            </div>
+                        </label>
+                        <div class="price-container">
+                            <div class="current-price">$24.00 USD</div>
+                            <div class="original-price">$32.00 USD</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-summary">
+                <div class="delivery-info">Free Delivery</div>
+                <div class="total-price">Total : <span id="total-price">$18.00 USD</span></div>
+            </div>
+            
+            <button class="add-to-cart-btn">
+                <span class="plus-icon">+</span>
+                Add to Cart
+            </button>
+            
+            <div class="powered-by">
+                <span>© Powered by Pumper</span>
+            </div>
+        </main>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
